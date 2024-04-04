@@ -13,7 +13,7 @@ const openai = new OpenAI({
 
 
 export async function sendMsgToOpenAI(message){
-    const res = await openai.completions.create({
+    const res = await openai.chat.completions.create({
         model: 'gpt-3.5-turbo-0125',
         prompt: message,
         temperature: 0.7,
