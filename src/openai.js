@@ -22,6 +22,5 @@ export async function sendMsgToOpenAI(message){
         frequency_penalty: 0,
         presence_penalty: 0
     });
-    console.log('Response:', res);
     return res.choices[0].message.content;
 }
