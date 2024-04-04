@@ -14,7 +14,7 @@ const openai = new OpenAI({
 
 export async function sendMsgToOpenAI(message){
     const res = await openai.completions.create({
-        model: 'GPT-3.5-Turbo',
+        model: 'gpt-3.5-turbo-1106',
         prompt: message,
         temperature: 0.7,
         max_tokens: 256,
